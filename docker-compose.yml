@@ -1,0 +1,10 @@
+services:
+  workspace:
+    build: .
+    volumes:
+      - .:/workspace
+    tty: true
+    environment:
+      - TZ=Asia/Tokyo
+      - SUBJECTS_DIR=/workspace/freesurfer/7.4.1/subjects
+    working_dir: /workspace
